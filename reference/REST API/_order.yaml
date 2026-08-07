@@ -14,3 +14,4 @@
 - create-provider-prefix
 - delete-provider-prefix
 - clients
+- list-data-centers
