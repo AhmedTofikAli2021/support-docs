@@ -15,3 +15,4 @@
 - delete-provider-prefix
 - clients
 - list-data-centers
+- get-data-center
