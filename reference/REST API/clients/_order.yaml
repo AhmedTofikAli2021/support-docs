@@ -2,3 +2,4 @@
 - post_clients
 - get_clients-totals
 - get_clients-id
+- put_clients-id
