@@ -43,3 +43,4 @@
 - list-events
 - get-event
 - create-event
+- update-event
