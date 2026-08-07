@@ -1,0 +1,43 @@
+---
+title: DataCite API Rate Limits
+excerpt: ''
+deprecated: false
+hidden: false
+metadata:
+  title: ''
+  description: ''
+  robots: index
+next:
+  description: ''
+---
+DataCite implements rate limits on requests to our APIs to improve communication with our users and support system performance and stability for all API activities. 
+
+## API rate limits
+
+Rate limits are applied in the following tiers:
+
+| Request Category | Qualifying Request                                                                                                                                                                               | Rate Limit                                 |
+| :--------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------- |
+| Authenticated    | The request contains: a valid `Authorization` header with DataCite credentials.                                                                                                                  | 3000 requests per 5 minutes per IP address |
+| Identified       | The request contains: a `User-Agent` header with an email address; _or_ a request URL with a `mailto=` query parameter containing an email address.                                              | 1000 requests per 5 minutes per IP address |
+| Unidentified     | The request does not contain: a valid `Authorization` header; _or_ a `User-Agent` header with an email address; _or_ a request URL with a `mailto=` query parameter containing an email address. | 500 requests per 5 minutes per IP address  |
+
+If your request has been rate limited, the API will return a 429 response code.
+
+## Content Negotiation
+
+Requests that come via doi.org [Content Negotiation](https://support.datacite.org/docs/datacite-content-resolver) have a rate limit of 1000 requests per 5 minutes per IP address.
+
+## Test system
+
+When placing requests to the test system, please do not exceed 750 requests per 5 minutes window. See the [Test Accounts Policy](doc:test-accounts-policy) for more information.
+
+## Sustained request rates
+
+For large-scale DOI registrations and updates (around 100,000+ [POST](https://support.datacite.org/reference/post_dois) or [PUT](https://support.datacite.org/reference/put_dois-id) requests to the `/dois` endpoint in a single day), we recommend 300-500 requests in a 5 minute window. 
+
+If you are planning a large number of DOI registrations or updates, please contact [support@datacite.org](mailto:support@datacite.org) for assistance.
+
+> 📘 
+> 
+> It is helpful to ensure that your script has incremental backoffs in the case of failure (i.e., the delay in retrying a failed request gets longer each time).
