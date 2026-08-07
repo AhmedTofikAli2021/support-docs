@@ -25,3 +25,4 @@
 - update-client-doi
 - delete-client-doi
 - list-client-prefixes
+- get-client-prefix
