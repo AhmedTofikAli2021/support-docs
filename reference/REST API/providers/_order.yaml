@@ -3,3 +3,4 @@
 - get_providers-totals
 - get_providers-id
 - put_providers-id
+- delete_providers-id
