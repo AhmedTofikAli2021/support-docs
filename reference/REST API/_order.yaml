@@ -44,3 +44,4 @@
 - get-event
 - create-event
 - update-event
+- delete-event
