@@ -1,0 +1,159 @@
+---
+title: Repository Settings
+excerpt: ''
+deprecated: false
+hidden: true
+link:
+  new_tab: false
+  url: https://support.datacite.org/docs/update-repository-settings
+metadata:
+  title: ''
+  description: ''
+  robots: index
+next:
+  description: ''
+---
+Consortium and Consortium Organization accounts can update the settings of their Repositories. 
+
+To modify the Repository settings, go to the Settings tab in the Repository dashboard. Select the Repository from the list of Repositories in order to view the appropriate Repository dashboard. Click the _Update Repository_ button on the top left. 
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/1c2eeae-Screenshot_2023-01-25_at_15.09.14.png",
+        "Screenshot 2023-01-25 at 15.09.14.png",
+        1582
+      ],
+      "align": "center",
+      "border": true
+    }
+  ]
+}
+[/block]
+
+
+Enter any changes in the appropriate fields and click _Save_ at the bottom of the page. **Note:** The Repository ID is fixed at time of Repository creation and cannot be changed. 
+
+# Field descriptions for Repository settings
+
+## Repository ID
+
+The Repository ID is a unique identifier for each Repository. It must contain uppercase letters or numbers and be of the form _MEMBER.REPOSITORY_, where _MEMBER_ is the MEMBER ID of the parent organization and _REPOSITORY_ is replaced by a short string representing the Repository. 
+
+**Note:** The Repository ID can't be modified.
+
+> 📘 Example of Repository ID
+> 
+> VFRU.ZZSX19  
+> Member ID =  VFRU  
+> Repository = ZZSX19
+
+## Type
+
+The Type field refers to the platform where the content will be shared and is automatically designated as "**Repository**". 
+
+- Select "**Periodical**" from the drop-down menu if the DOIs registered will be assigned to publications and journals.
+- Select "[IGSN ID Catalog](doc:registering-igsn-ids)" from the drop-down menu if the the DOIs registered will be [IGSN IDs](doc:about-igsn-ids-for-material-samples) assigned to material samples and features-of-interest.
+- Select “**RAiD Registry**” only if you are a RAiD Registration Agency (RA) and will be registering DOIs with the RAiD Service. [Read more about RAiD](doc:raids).
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/4711fdd-Screenshot_2024-05-09_at_11.59.35.png",
+        "Screen Shot 2023-03-10 at 12.50.12 PM.png",
+        ""
+      ],
+      "align": "center"
+    }
+  ]
+}
+[/block]
+
+
+> 🚧 
+> 
+> Repositories with an IGSN ID Catalog Type cannot change Types after creation. Repositories with a Repository or Periodical Type cannot change to the IGSN ID Catalog Type after creation.
+
+## re3data Record
+
+Link to the corresponding record in the re3data registry of research data repositories. This field is optional.
+
+> 📘 Link to your re3data record
+> 
+> Linking the [re3data](https://www.re3data.org/) identifier automatically displays a number of fields from re3data without needing to store that information a second time in Fabrica. In the case of disciplinary repositories, the **Repository Discipline field will be automatically populated.**
+
+> ❗️ Linking re3data records currently unavailable
+> 
+> New links to re3data records cannot be established in Fabrica as of March 2025. Please contact [support@datacite.org](mailto:support@datacite.org) for assistance.
+
+## Repository Name
+
+Full name of the Repository. This is typically the name of the organization, as the organization wants it displayed. For example, "Archaeology Data Service". 
+
+An Alternate Repository Name can be included if appropriate.
+
+## System Email
+
+This email address receives reset password requests. 
+
+## Service Contact
+
+This is the name of the person responsible for the account. This person is considered to be the primary contact for any necessary DataCite or system communications. 
+
+## Description
+
+Add an optional description of the repository here.
+
+## URL
+
+The homepage of the repository.
+
+## Language
+
+Select the language of the repository from the dropdown list.
+
+## Software
+
+Select the software used by the Repository from the dropdown list.
+
+![](https://files.readme.io/9588bde-repository_software.png)
+
+## Domains
+
+By default a DOI can point to any URL, indicated by an asterix \* in the domain settings. 
+
+![](https://files.readme.io/a3b7bed-Screen_Shot_2020-11-03_at_10.22.35.png "Screen Shot 2020-11-03 at 10.22.35.png")
+
+To limit the list of domains that can be used to register URLs for a DOI, enter one or more domains or subdomains, separated by a comma. You can use an asterix to allow any subdomain, e.g. "\*.example.org". Make sure you are entering only the hostname, not a full URL starting with "http" or "https". Also keep in mind the "www" is a subdomain.
+
+![](https://files.readme.io/d7b2fdc-Screen_Shot_2020-10-28_at_09.51.08.png "Screen Shot 2020-10-28 at 09.51.08.png")
+
+## Repository type
+
+Add the type of Repository (e.g. Institutional, Disciplinary).
+
+## Repository Discipline
+
+This will only appear if the Repository Type "Disciplinary" has been selected. Add the discipline of the repository using the look-up from the OECD Fields of Science.
+
+> 👍 The Repository Discipline field
+> 
+> The Repository Discipline field is used to enrich DOI metadata. This does not modify DOI metadata but it used to enhance search queries, so if the Repository Discipline is Biology, DOIs registered by the repository will be captured by queries for the subject "Biology" in the Graph QL API and DataCite Commons. This feature is only for disciplinary repositories.
+
+![](https://files.readme.io/eb78a0b-small-Screenshot_2023-05-03_at_12.55.49.png)
+
+## Certificate
+
+The certificate held by the Repository e.g CoreTrustSeal. More information about certificates can be found here [RDA/WDS Certification of Digital Repositories IG](https://www.rd-alliance.org/groups/rdawds-certification-digital-repositories-ig.html)
+
+## Account is active checkbox
+
+If the box is checked the account is active and can register DOIs. If the box is unchecked the account is "Inactive" and can no longer register DOIs.
+
+> 📘 Would you like to know more?
+> 
+> If you have any questions, requests or ideas please your Consortium Lead.
