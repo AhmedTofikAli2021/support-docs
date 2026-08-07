@@ -23,3 +23,5 @@
 - >-
   how-can-i-use-the-datacite-api-to-search-and-retrieve-the-dois-and-metadata-for-my-organization-or-a-specific-repository
 - how-can-i-make-my-doi-list-query-more-efficient-when-using-the-rest-api
+- >-
+  what-can-i-do-if-i-receive-read-timeout-reached-errors-while-paging-through-datacite-doi-metadata-using-the-rest-api
