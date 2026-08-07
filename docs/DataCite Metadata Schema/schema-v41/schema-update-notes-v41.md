@@ -1,0 +1,121 @@
+---
+title: DataCite Metadata Schema v4.1 Earlier Version Update Notes
+excerpt: ''
+deprecated: false
+hidden: false
+metadata:
+  title: ''
+  description: ''
+  robots: index
+next:
+  description: ''
+  pages:
+    - type: basic
+      slug: schema-values-unknown-information-v41
+      title: DataCite Metadata Schema v4.1 Standard Values for Unknown Information
+---
+#Version 4.0 Update
+##Version 4.0 of the schema includes these changes:
+- Allowing more than one nameIdentifier per creator or contributor
+- Addition of new optional subproperties for creatorName and contributorName
+   - givenName
+   - familyName
+- Addition of new titleType “Other”
+- Addition of new subproperty for subjectScheme
+   - subjectScheme
+      - valueURI
+- Changing resourceTypeGeneral from optional to mandatory
+- Addition of a new relatedIdentifierType option “IGSN”
+- Addition of a new descriptionType "TechnicalInfo"
+- Addition of a new subproperty for GeoLocation “geoLocationPolygon”
+- Changing the definition of the existing GeoLocation sub properties (geoLocationPoint, and
+geoLocationBox)
+- Addition of a new property: FundingReference, with subproperties
+   - funderName
+   - funderIdentifier
+- funderIdentifierType
+   - awardNumber
+   - awardURI
+   - awardTitle
+- Deprecation of contributorType “funder” (as a result of adding the new property Version “FundingReference”)
+
+##Version 4.0 of the documentation includes these changes:
+- Provision of a link to guidelines for how to write the ORCID ID (See properties 2.2.1 and 7.3.1 nameIdentifierScheme)
+- Adjustment of the instructions for [resourceTypeGeneral](doc:schema-mandatory-properties-v41#section-10-1-resourcetypegeneral) option “collection”
+- Note that, while the property resourceType has been relocated in the documentation to the mandatory property section, it retains its original numbering (10).
+
+#Version 3.1 Update
+##Version 3.1 of the schema includes these changes: 
+- New affiliation attribute for Creator and Contributor 
+- New relationType pairs 
+- IsReviewedBy and Reviews 
+- IsDerivedFrom and IsSourceOf 
+- New contributorType: DataCurator 
+- New relatedIdentifierTypes: 
+   - arXiv 
+   - bibcode 
+
+##Version 3.1 of the documentation includes these changes: 
+- Documentation for the new affiliation attributes for Creator and Contributor 
+- Special notes about support for long lists of names (Creator and Contributor) 
+- Additional guidance for: 
+   - Recording Publication Year 
+   - Handling the digitised version of physical object 
+- Handling missing mandatory property values, including standard values table 
+- Documentation for the new contributorType: DataCurator 
+- Documentation for the two new relatedIdentifierTypes: 
+   - arXiv 
+   - bibcode 
+- Documentation, including examples, for the new relationType pairs: 
+   - IsReviewedBy and Reviews 
+   - IsDerivedFrom and IsSourceOf 
+   - Correction of link errors in 3.0 documentation
+
+#Version 3.0 Update
+##Version 3.0 of the DataCite Metadata Schema included these changes:
+- Correction of a problem with our way of depicting dates by
+    - implementing [RKMS-ISO860132](http://www.ukoln.ac.uk/metadata/dcmi/collection-RKMS-ISO8601/) standard for depicting date ranges, so that a range is indicated as follows: 2004-03-02/2005-06-02
+    - deleting startDate and endDate date types, and derogating these from earlier versions
+- Addition of a new GeoLocation property, with the sub-properties geoLocationPoint, geoLocationBox, geoLocationPlace supporting a simple depiction of geospatial information, as well as a free text description.
+- Addition of new values to controlled lists:
+    - contributorType: ResearchGroup and Other
+    - dateType: Collected
+    - resourceTypeGeneral: Audiovisual, Workflow, and Other and derogation of Film
+    - relatedIdentifierType: PMID
+    - relationType: IsIdenticalTo (indicates that A is identical to B, for use when there is a need to register two separate instances of the same resource)
+    - relationType: HasMetadata, (indicates resource A has additional metadata B and indicates), IsMetadataFor (indicates additional metadata A for resource B) o descriptionType: Methods
+- Deletion of the derogated resourceType: film
+- new sub-properties for relationType: relatedMetadataSchema, schemeURI and schemaType, to be used only for the new relationType pair of HasMetadata, IsMetadataFor
+- Addition of schemeURI sub-property to the nameIdentifierScheme associated with CreatorName, ContributorName and Subject
+- Addition of the rightsURI sub-property to Rights; Rights is now repeatable (within wrapper element rightsList).
+- Implementation of the xml:lang attribute that can be used on the properties Title, Subject and Description. Allowed values are IETF BCP 47, ISO 639-1 language codes, e.g. en, de, fr
+- Removal of two system-generated administrative metadata fields: LastMetadataUpdate and MetadataVersionNumber because both values are tracked in another way now.
+- Two additional schema code level changes are the allowance of keeping optional wrapper elements empty and the allowance of arbitrary ordering of elements (by removal of <xs:sequence>).
+
+##Version 3.0 of the DataCite Metadata Schema documentation included these changes:
+- Updates to the introductory information
+- Provision of greater detail, explanatory material and definitions for controlled lists
+- Indication of recommended metadata, in addition to mandatory and optional
+- Addition of more and more varied XML examples on the Metadata Schema website
+- Removal from documentation of information about administrative metadata (which cannot be edited by contributors).
+
+#Version 2.2 Update
+##Version 2.2 of the DataCite Metadata Schema introduced several changes, as noted below:
+- Addition of “URL” to list of allowed values for relatedIdentifierType
+- Addition of the following values to list of allowed values for contributorType: Producer, Distributor, RelatedPerson, Supervisor, Sponsor, Funder, RightsHolder
+- Addition of “SeriesInformation” to list of allowed values for descriptionType
+- Addition of “Model” to list of allowed values for resourceTypeGeneral
+
+##Version 2.2 of the DataCite Metadata Schema documentation included these changes:
+- Provision of more examples of xml for different types of resources
+- Explanation of the PublicationYear property in consideration of the requirements of citation. A change to the definition of the Publisher property, which now reads, “The name of the entity that holds, archives, publishes, prints, distributes, releases, issues, or produces the resource. This property will be used to formulate the citation, so consider the prominence of the role.”
+
+#Version 2.1 Update
+##Version 2.1 of the DataCite Metadata Schema introduced several changes, as noted below:
+- Addition of a namespace (http://schema.datacite.org/namespace) to the schema in order to support OAI PMH compatibility
+- Enforcement of content for mandatory properties
+- New type for the Date property to conform with the specification that it handles both YYYY and YYYY-MM-DD values
+
+##Version 2.1 of the DataCite Metadata Schema documentation included these changes:
+- Addition of a column to the Mandatory and Optional Properties tables providing an indicator of whether the property being described is an attribute or a child of the corresponding property that has preceded it
+- Revision of the allowed values description for the attribute 12.2 relationType. These have been reviewed and rewritten for increased clarity. In several cases, corrections to the definitions occurred.
