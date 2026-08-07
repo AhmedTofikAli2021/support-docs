@@ -1,6 +1,6 @@
 ---
-title: Create you first DOI
-excerpt: ''
+title: Create your first DOI
+excerpt: CDL.CDL
 deprecated: false
 hidden: true
 metadata:
