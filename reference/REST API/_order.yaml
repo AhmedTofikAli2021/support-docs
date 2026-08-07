@@ -26,3 +26,4 @@
 - delete-client-doi
 - list-client-prefixes
 - get-client-prefix
+- doi-prefixes
