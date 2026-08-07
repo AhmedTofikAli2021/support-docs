@@ -21,3 +21,4 @@
 - delete-client
 - list-client-dois
 - get-client-doi
+- create-client-doi
