@@ -24,3 +24,4 @@
 - create-client-doi
 - update-client-doi
 - delete-client-doi
+- list-client-prefixes
