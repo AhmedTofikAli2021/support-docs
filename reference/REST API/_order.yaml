@@ -23,3 +23,4 @@
 - get-client-doi
 - create-client-doi
 - update-client-doi
+- delete-client-doi
