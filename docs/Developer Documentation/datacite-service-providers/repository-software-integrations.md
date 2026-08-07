@@ -1,0 +1,167 @@
+---
+title: Repository Software Integrations (old)
+excerpt: ''
+deprecated: false
+hidden: true
+metadata:
+  title: ''
+  description: ''
+  robots: index
+next:
+  description: ''
+---
+What is a DataCite Service Provider?
+
+A DataCite Registered Service Provider is an organization that has integrated with one of the DataCite APIs in order to allow existing DataCite Members to register DOIs using that Member's own log-in credentials. A CRIS or a repository platform are both examples of a Service Provider.
+
+In order to be listed as a Registered Service Provider, an organization must [apply](https://formstack.io/F45B4) and must meet essential requirements.
+
+[block:callout]
+{
+  "type": "info",
+  "title": "To register DOI names you need a DataCite account!",
+  "body": "You will have to become a DataCite Member or join as part of a Consortium in order to assign DataCite DOIs to your datasets. Check what is the difference and how to become a member [here](doc:what-is-the-difference-between-members-and-users)!"
+}
+[/block]
+We can help you configuring these platforms, but for specific issues you should contact the developers of these integrations directly. 
+[block:api-header]
+{
+  "title": "CKAN"
+}
+[/block]
+[https://ckan.org](https://ckan.org)
+
+CKAN is a data management system that makes data accessible – by providing tools to streamline publishing, sharing, finding and using data. CKAN is aimed at data publishers (national and regional governments, companies and organizations) wanting to make their data open and available.
+
+CKAN has an extension for assigning a digital object identifier (DOI) to datasets, using the DataCite DOI service:
+[http://extensions.ckan.org/extension/doi/](http://extensions.ckan.org/extension/doi/)
+[block:api-header]
+{
+  "type": "basic",
+  "title": "Dataverse"
+}
+[/block]
+[http://dataverse.org](http://dataverse.org) 
+
+Dataverse is an open source web application to share, preserve, cite, explore, and analyze research data. It facilitates making data available to others, and allows you to replicate others' work more easily. Researchers, data authors, publishers, data distributors, and affiliated institutions all receive academic credit and web visibility.
+
+Dataverse supports DataCite DOIs. You can configure your installation following this guide: [http://guides.dataverse.org/en/latest/installation/config.html?highlight=datacite](http://guides.dataverse.org/en/latest/installation/config.html?highlight=datacite) 
+[block:api-header]
+{
+  "type": "basic",
+  "title": "DSpace"
+}
+[/block]
+[http://www.dspace.org](http://www.dspace.org) 
+
+DSpace is an open source software platform that enables organisations to:
+* capture and describe digital material using a submission workflow module, or a variety of programmatic ingest options
+* distribute an organisation's digital assets over the web through a search and retrieval system
+* preserve digital assets over the long term.
+
+Please, read carefully the DSpace documentation. There are some limitations on the way you can test your configuration (i.e. the test prefix is not supported!):
+[https://wiki.duraspace.org/display/DSDOC6x/DOI+Digital+Object+Identifier](https://wiki.duraspace.org/display/DSDOC6x/DOI+Digital+Object+Identifier) 
+[block:api-header]
+{
+  "title": "Eprints"
+}
+[/block]
+[http://www.eprints.org](http://www.eprints.org/uk/)
+
+EPrints is an open-source digital repository platform. Developed at the University of Southampton, EPrints has been providing services for over 15 years.
+
+EPrints provides multiple plugins to mint DOIs with DataCite, you can find them here:
+[http://bazaar.eprints.org/304/](http://bazaar.eprints.org/304/)
+[http://bazaar.eprints.org/380/](http://bazaar.eprints.org/380/)
+[http://bazaar.eprints.org/1100/](http://bazaar.eprints.org/1100/)
+[https://github.com/eprints/datacite](https://github.com/eprints/datacite)
+[https://github.com/eprintsug/DataCiteDoi](https://github.com/eprintsug/DataCiteDoi)
+[block:api-header]
+{
+  "title": "Hydra"
+}
+[/block]
+[https://projecthydra.org](https://projecthydra.org)
+
+Hydra is an open-source digital repository software product. Hydra's main components are Fedora Commons, Solr, Blacklight, and HydraHead.
+
+See how Hydra manages persistent identifiers here:
+[https://github.com/projecthydra-labs/hydra-remote_identifier](https://github.com/projecthydra-labs/hydra-remote_identifier)
+[block:api-header]
+{
+  "type": "basic",
+  "title": "Invenio"
+}
+[/block]
+[http://invenio-software.org](http://invenio-software.org) 
+
+Invenio is an open source software library management package that provides the tools for management of digital assets in an institutional repository. The software is typically used for open access repositories for scholarly and/or published digital content and as a digital library. Invenio is developed at CERN and freely available for download.
+
+Invenio supports DataCite DOIs. You can configure your installation following this guide:
+[https://datacite.readthedocs.io/en/latest/](https://datacite.readthedocs.io/en/latest/) 
+[block:api-header]
+{
+  "title": "Islandora"
+}
+[/block]
+Islandora is an open-source software framework designed to help institutions and organizations and their audiences collaboratively manage, and discover digital assets using a best-practices framework. Islandora was originally developed by the University of Prince Edward Island's Robertson Library, but is now implemented and contributed to by an ever-growing international community.
+
+A few modules can be found, probably outdated:
+[https://github.com/discoverygarden/islandora_doi](https://github.com/discoverygarden/islandora_doi)
+[https://github.com/roblib/islandora_datacite_doi](https://github.com/roblib/islandora_datacite_doi)
+[block:api-header]
+{
+  "title": "OJS"
+}
+[/block]
+[https://pkp.sfu.ca/ojs/](https://pkp.sfu.ca/ojs/)
+
+Open Journal Systems (OJS) is a journal management and publishing system that has been developed by the Public Knowledge Project through its federally funded efforts to expand and improve access to research.
+
+OJS supports DOIs for issues, articles, galleries and supplementary files:
+[https://github.com/pkp/ojs/tree/master/plugins/importexport/datacite](https://github.com/pkp/ojs/tree/master/plugins/importexport/datacite)
+[block:api-header]
+{
+  "title": "OPUS 4"
+}
+[/block]
+[https://www.opus-repository.org/]
+
+OPUS 4 is an open source software under the GNU General Public License for the operation of institutional and professional repositories. OPUS 4 enables the development, publication, administration, search and distribution of documents with and without full text. 
+[block:api-header]
+{
+  "title": "Pure"
+}
+[/block]
+[https://www.elsevier.com/solutions/pure](https://www.elsevier.com/solutions/pure)
+
+Pure aggregates organization's research information from numerous internal and external sources. It is a centralized system that builds reports, carry out performance assessments, manage researcher profiles, enable research networking and expertise discovery and more.
+
+Pure can manage the DOI registration process.
+
+
+[block:api-header]
+{
+  "title": "HUBzero"
+}
+[/block]
+[https://hubzero.org/](https://hubzero.org/)
+
+The HUBzero Foundation is a community-based, non-profit organization that promotes the use of HUBzero and ensures ongoing sustainability of the core software. Managed by Purdue University as the lead institution, any organization that joins the HUBzero Foundation as a “participant” has input rights into the operation of the foundation.
+
+HUBzero supports DataCite DOIs. You can configure your installation following this guide:
+[https://help.hubzero.org/documentation/220/managers/components/publications/datacite](https://help.hubzero.org/documentation/220/managers/components/publications/datacite)
+[block:api-header]
+{
+  "type": "basic",
+  "title": "Others?"
+}
+[/block]
+[Contact us](doc:how-to-contact-datacite) to list your integration/documentation here!
+[block:callout]
+{
+  "type": "info",
+  "body": "If you have any questions, requests or ideas please [contact us!](doc:how-to-contact-datacite)",
+  "title": "Would you like to know more?"
+}
+[/block]
