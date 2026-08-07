@@ -20,3 +20,4 @@
 - update-client
 - delete-client
 - list-client-dois
+- get-client-doi
