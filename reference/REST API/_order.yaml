@@ -18,3 +18,4 @@
 - get-data-center
 - create-client
 - update-client
+- delete-client
