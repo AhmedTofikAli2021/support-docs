@@ -3,3 +3,4 @@
 - get_clients-totals
 - get_clients-id
 - put_clients-id
+- delete_clients-id
