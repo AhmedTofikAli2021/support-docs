@@ -30,3 +30,4 @@
 - list-prefixes
 - get-prefix
 - create-prefix
+- delete-prefix
