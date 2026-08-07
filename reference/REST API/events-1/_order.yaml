@@ -2,3 +2,4 @@
 - post_events
 - get_events-id
 - put_events-id
+- delete_events-id
