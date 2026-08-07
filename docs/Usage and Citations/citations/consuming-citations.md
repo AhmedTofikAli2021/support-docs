@@ -1,0 +1,254 @@
+---
+title: Consuming citations
+excerpt: ''
+deprecated: false
+hidden: false
+metadata:
+  title: ''
+  description: ''
+  robots: index
+next:
+  description: ''
+---
+Data citation information is stored in Event Data. See the Event Data API guide for more information about how to consume information about data citation.
+[block:html]
+{
+  "html": "<div>\n\n<a style=\"width:100%\"  href=\"https://support.datacite.org/docs/eventdata-guide#section-usage-events\" class=\"btn btn-primary btn-lg btn-block\" role=\"button\" aria-pressed=\"true\">Event Data API Guide.</a>\n\n \n</div>"
+}
+[/block]
+Let's look at a simple example. To consume DOI citations we need to call the `events` endpoint and filter by the *Crossref* source and the *prefix*.
+
+```shell
+  curl  "https://api.test.datacite.org/events?mailto=YOUR_EMAIL_HERE&source-id=crossref&prefix=10.5438"
+```
+
+You will retrieve a [JSONAPI response](http://jsonapi.org/recommendations/). The JSONAPI responses have three main objects: `data`, `links` and `meta`. We will focus on the `data` object, as this object contains all the information we want. There are a few important things to consider. First, the attribute `data`  is an array and contains the metadata for all the usage metrics for the prefix found by the query. 
+
+
+```json
+
+   "data":[
+      {
+         "id":"4bcd1887-da05-448b-87b2-65952fb2196e",
+         "type":"events",
+         "attributes":{
+            "subj-id":"https://doi.org/10.1007/s11082-018-1327-1",
+            "obj-id":"https://doi.org/10.5438/0012",
+            "source-id":"crossref",
+            "relation-type-id":"references",
+            "total":1,
+            "message-action":"create",
+            "source-token":"8676e950-8ac5-4074-8ac3-c0a18ada7e99",
+            "license":"https://doi.org/10.13003/CED-terms-of-use",
+            "occurred-at":"2018-01-17T00:00:00.000Z",
+            "timestamp":"2018-12-12T08:36:09.475Z"
+         },
+         "relationships":{
+            "subj":{
+               "data":{
+                  "id":"https://doi.org/10.1007/s11082-018-1327-1",
+                  "type":"objects"
+               }
+            },
+            "obj":{
+               "data":{
+                  "id":"https://doi.org/10.5438/0012",
+                  "type":"objects"
+               }
+            }
+         }
+      },
+      {
+         "id":"d3367112-4c66-4811-9c66-b023ba68565f",
+         "type":"events",
+         "attributes":{
+            "subj-id":"https://doi.org/10.4018/978-1-5225-2221-8.ch003",
+            "obj-id":"https://doi.org/10.5438/0005",
+            "source-id":"crossref",
+            "relation-type-id":"references",
+            "total":1,
+            "message-action":"create",
+            "source-token":"8676e950-8ac5-4074-8ac3-c0a18ada7e99",
+            "license":"https://doi.org/10.13003/CED-terms-of-use",
+            "occurred-at":"0000-01-01T00:00:00.000Z",
+            "timestamp":"2018-12-12T08:43:00.513Z"
+         },
+         "relationships":{
+            "subj":{
+               "data":{
+                  "id":"https://doi.org/10.4018/978-1-5225-2221-8.ch003",
+                  "type":"objects"
+               }
+            },
+            "obj":{
+               "data":{
+                  "id":"https://doi.org/10.5438/0005",
+                  "type":"objects"
+               }
+            }
+         }
+      },
+      {
+         "id":"c318acc2-5056-4f94-a007-0ec890f7c49e",
+         "type":"events",
+         "attributes":{
+            "subj-id":"https://doi.org/10.4018/978-1-5225-0700-0.ch001",
+            "obj-id":"https://doi.org/10.5438/0010",
+            "source-id":"crossref",
+            "relation-type-id":"references",
+            "total":1,
+            "message-action":"create",
+            "source-token":"8676e950-8ac5-4074-8ac3-c0a18ada7e99",
+            "license":"https://doi.org/10.13003/CED-terms-of-use",
+            "occurred-at":"0000-01-01T00:00:00.000Z",
+            "timestamp":"2018-12-12T08:43:50.172Z"
+         },
+         "relationships":{
+            "subj":{
+               "data":{
+                  "id":"https://doi.org/10.4018/978-1-5225-0700-0.ch001",
+                  "type":"objects"
+               }
+            },
+            "obj":{
+               "data":{
+                  "id":"https://doi.org/10.5438/0010",
+                  "type":"objects"
+               }
+            }
+         }
+      },
+      {
+         "id":"aef8403b-6f14-408b-8615-e542533107cb",
+         "type":"events",
+         "attributes":{
+            "subj-id":"https://doi.org/10.1007/978-3-319-67008-9_7",
+            "obj-id":"https://doi.org/10.5438/0012",
+            "source-id":"crossref",
+            "relation-type-id":"references",
+            "total":1,
+            "message-action":"create",
+            "source-token":"8676e950-8ac5-4074-8ac3-c0a18ada7e99",
+            "license":"https://doi.org/10.13003/CED-terms-of-use",
+            "occurred-at":"2017-01-01T00:00:00.000Z",
+            "timestamp":"2018-12-12T08:44:30.071Z"
+         },
+         "relationships":{
+            "subj":{
+               "data":{
+                  "id":"https://doi.org/10.1007/978-3-319-67008-9_7",
+                  "type":"objects"
+               }
+            },
+            "obj":{
+               "data":{
+                  "id":"https://doi.org/10.5438/0012",
+                  "type":"objects"
+               }
+            }
+         }
+      },
+      {
+         "id":"ce40fee4-3818-4f9e-8833-734211d2d9e2",
+         "type":"events",
+         "attributes":{
+            "subj-id":"https://doi.org/10.1080/19386389.2018.1439278",
+            "obj-id":"https://doi.org/10.5438/0015",
+            "source-id":"crossref",
+            "relation-type-id":"references",
+            "total":1,
+            "message-action":"create",
+            "source-token":"8676e950-8ac5-4074-8ac3-c0a18ada7e99",
+            "license":"https://doi.org/10.13003/CED-terms-of-use",
+            "occurred-at":"2017-10-02T00:00:00.000Z",
+            "timestamp":"2018-12-12T08:54:46.962Z"
+         },
+         "relationships":{
+            "subj":{
+               "data":{
+                  "id":"https://doi.org/10.1080/19386389.2018.1439278",
+                  "type":"objects"
+               }
+            },
+            "obj":{
+               "data":{
+                  "id":"https://doi.org/10.5438/0015",
+                  "type":"objects"
+               }
+            }
+         }
+      },
+      {
+         "id":"919bcfa0-5049-4593-a56e-511feb860564",
+         "type":"events",
+         "attributes":{
+            "subj-id":"https://doi.org/10.1007/978-3-658-16937-4_4-1",
+            "obj-id":"https://doi.org/10.5438/0012",
+            "source-id":"crossref",
+            "relation-type-id":"references",
+            "total":1,
+            "message-action":"create",
+            "source-token":"8676e950-8ac5-4074-8ac3-c0a18ada7e99",
+            "license":"https://doi.org/10.13003/CED-terms-of-use",
+            "occurred-at":"2018-01-01T00:00:00.000Z",
+            "timestamp":"2018-12-12T09:04:20.976Z"
+         },
+         "relationships":{
+            "subj":{
+               "data":{
+                  "id":"https://doi.org/10.1007/978-3-658-16937-4_4-1",
+                  "type":"objects"
+               }
+            },
+            "obj":{
+               "data":{
+                  "id":"https://doi.org/10.5438/0012",
+                  "type":"objects"
+               }
+            }
+         }
+      },
+      {
+         "id":"2f056f6e-96e4-469d-ac0b-5f18ec4be531",
+         "type":"events",
+         "attributes":{
+            "subj-id":"https://doi.org/10.4018/978-1-5225-6921-3.ch019",
+            "obj-id":"https://doi.org/10.5438/0005",
+            "source-id":"crossref",
+            "relation-type-id":"references",
+            "total":1,
+            "message-action":"create",
+            "source-token":"8676e950-8ac5-4074-8ac3-c0a18ada7e99",
+            "license":"https://doi.org/10.13003/CED-terms-of-use",
+            "occurred-at":"0000-01-01T00:00:00.000Z",
+            "timestamp":"2018-12-12T09:04:46.481Z"
+         },
+         "relationships":{
+            "subj":{
+               "data":{
+                  "id":"https://doi.org/10.4018/978-1-5225-6921-3.ch019",
+                  "type":"objects"
+               }
+            },
+            "obj":{
+               "data":{
+                  "id":"https://doi.org/10.5438/0005",
+                  "type":"objects"
+               }
+            }
+         }
+      }
+   ],
+   "meta":{
+      "total":7,
+      "total-pages":1,
+      "page":1,
+      "sources":[
+         {
+            "id":"crossref",
+            "title":"Crossref to DataCite",
+            "count":7
+         }
+      ],
+
+```
