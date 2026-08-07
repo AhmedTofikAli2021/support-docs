@@ -1,3 +1,4 @@
 - get_events
 - post_events
 - get_events-id
+- put_events-id
