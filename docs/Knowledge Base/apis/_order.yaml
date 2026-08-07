@@ -14,3 +14,5 @@
 - >-
   how-do-i-know-which-metadata-elements-to-include-in-the-body-of-a-request-to-the-datacite-json-rest-api
 - how-do-i-query-the-rest-api-and-whats-in-the-response
+- >-
+  im-using-the-mds-api-to-create-dois-i-got-a-message-that-my-request-was-successful-but-the-dois-arent-resolving-what-do-i-do
