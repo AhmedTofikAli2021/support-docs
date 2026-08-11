@@ -12,14 +12,15 @@ next:
 ---
 This section documents upcoming changes to DataCite APIs and services.
 
-| Documentation                                                            | Timeline       |
-| :----------------------------------------------------------------------- | :------------- |
-| [DataCite Event Data Changes](doc:datacite-event-data-changes)           | Q3 and Q4 2026 |
-| [DataCite GraphQL API Deprecation](doc:datacite-graphql-api-deprecation) | July 2027      |
+| Documentation                                                                                                                    | Timeline       |
+| :------------------------------------------------------------------------------------------------------------------------------- | :------------- |
+| [DataCite Event Data Changes](doc:datacite-event-data-changes)                                                                   | Q3 and Q4 2026 |
+| [DataCite GraphQL API Deprecation](doc:datacite-graphql-api-deprecation)                                                         | July 2027      |
+| [DataCite REST API "affiliation" and "publisher" Default Change](doc:datacite-rest-api-affiliation-and-publisher-default-change) | September 2027 |
 
 ## Changelog
 
-The following changes have already been implemented. 
+The following changes have already been implemented.
 
 | Documentation                                                                                         | Implemented   |
 | :---------------------------------------------------------------------------------------------------- | :------------ |
