@@ -2,7 +2,7 @@
 title: DataCite REST API "affiliation" and "publisher" Default Change
 excerpt: ''
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
