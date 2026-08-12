@@ -1,5 +1,5 @@
 ---
-title: Getting Started (Hidden)
+title: Getting Started (Redirects)
 deprecated: false
 hidden: true
 metadata:
