@@ -14,8 +14,6 @@
   what-is-the-difference-between-the-created-and-registered-date-in-the-datacite-rest-api
 - is-there-a-rate-limit-for-making-requests-against-the-datacite-apis
 - >-
-  how-do-i-update-my-dois-to-metadata-schema-version-4-with-the-datacite-rest-api
-- >-
   how-do-i-know-which-metadata-elements-to-include-in-the-body-of-a-request-to-the-datacite-json-rest-api
 - how-do-i-query-the-rest-api-and-whats-in-the-response
 - >-
