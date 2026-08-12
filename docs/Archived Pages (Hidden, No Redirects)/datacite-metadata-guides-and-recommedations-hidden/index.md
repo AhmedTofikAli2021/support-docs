@@ -1,5 +1,5 @@
 ---
-title: DataCite Metadata Guides and Recommedations (Hidden)
+title: DataCite Metadata Guides and Recommedations (Archive)
 deprecated: false
 hidden: true
 metadata:
