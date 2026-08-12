@@ -1,5 +1,5 @@
 ---
-title: Getting Started (Hidden)
+title: Getting Started (Archive)
 deprecated: false
 hidden: true
 metadata:
