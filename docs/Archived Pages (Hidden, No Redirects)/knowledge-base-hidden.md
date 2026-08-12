@@ -1,5 +1,5 @@
 ---
-title: Knowledge Base (Hidden)
+title: Knowledge Base (Archive)
 deprecated: false
 hidden: true
 metadata:
