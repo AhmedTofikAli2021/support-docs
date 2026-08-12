@@ -1,5 +1,5 @@
 ---
-title: Community (Hidden)
+title: Community (Archive)
 deprecated: false
 hidden: true
 metadata:
