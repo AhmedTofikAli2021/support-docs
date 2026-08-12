@@ -4,7 +4,7 @@ excerpt: ''
 deprecated: false
 hidden: true
 link:
-  new_tab: true
+  new_tab: false
   url: https://support.datacite.org/docs/field-descriptions-for-form
 metadata:
   title: ''
