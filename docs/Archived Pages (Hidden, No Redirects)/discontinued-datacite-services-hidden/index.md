@@ -1,5 +1,5 @@
 ---
-title: Discontinued DataCite Services (Hidden)
+title: Discontinued DataCite Services (Archive)
 deprecated: false
 hidden: true
 metadata:
