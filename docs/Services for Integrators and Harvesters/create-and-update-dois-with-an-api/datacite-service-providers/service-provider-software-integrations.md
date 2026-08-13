@@ -102,7 +102,7 @@ DSpace is an open source software platform to create repositories. It enables or
 
 **DSpace Training slides:** [Creating DOIs with rich metadata using DSpace](https://zenodo.org/records/12514507)
 
-**Registered service providers:** [The Library Code GmbH](https://www.the-library-code.de/); [4Science](https://www.4science.com/); [Atmire](https://www.atmire.com); [eScire](https://www.escire.lat/), [PCG Academia](https://pcgacademia.pl/en/dspace-cris/) 
+**Registered service providers:** [4Science](https://www.4science.com/); [Atmire](https://www.atmire.com); [eScire](https://www.escire.lat/), [PCG Academia](https://pcgacademia.pl/en/dspace-cris/) 
 
 ### EPrints
 
