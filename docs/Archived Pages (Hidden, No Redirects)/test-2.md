@@ -28,7 +28,7 @@ Before being ingested by DataCite, each enrichment record is also checked agains
 
 When retrieving an enriched DOI record, the enrichment records associated with a given DOI are applied to the original DOI record, generating a separate, enriched DOI record. The original DOI record is not modified by this process in any way.
 
-Enrichment records are not applied if targeted metadata fields are changed by the original depositor. The original DOI record is displayed in place of the enriched record if the enriched record is in any way invalid according to the DataCite Metadata Schema
+Enrichment records are not applied if targeted metadata fields are changed by the original depositor. The original DOI record is displayed in place of the enriched record if the enriched record is in any way invalid according to the DataCite Metadata Schema.
 
 ### How are enriched DOI records generated?
 
@@ -36,7 +36,9 @@ The image below visualizes the process that produces an enriched DOI record. The
 
 ![](https://files.readme.io/efa77838dc3af792908a87a29b4c0107a4d557972506aa5e0a2432dd0548e2b1-Screen_Shot_2026-06-01_at_2.02.39_PM.png)
 
-### Retrieve a list of DOI records with enrichments applied
+### Retrieve enriched DOI records
+
+#### Retrieve a list of DOI records with enrichments applied
 
 When [retrieving a list of DOIs](https://support.datacite.org/docs/api-get-lists) with the REST API, set the parameter `enriched=true` to retrieve a list of DOI records with enrichments applied. DOI records with enrichments will appear with enriched values. DOI records without applicable enrichments will appear the same way they do when the `enriched=true` parameter is not set.
 
@@ -46,7 +48,7 @@ For example, the following request can be used to retrieve a list of all DOI met
 curl “https://api.datacite.org/dois?enriched=true&affiliation=true&publisher=true&page[cursor]=1”
 ```
 
-#### Queries and filtering
+##### Queries and filtering
 
 All [REST API query and filter parameters](https://support.datacite.org/docs/api-queries) for list requests are supported when `enriched=true`. Querying and filtering with these parameters will query and filter by enriched metadata values if available and original values if not.
 
@@ -62,11 +64,11 @@ The following request retrieves DOIs by British Library-affiliated researchers u
 curl “https://api.datacite.org/dois?affiliation-id=https://ror.org/05dhe8b71&enriched=true&affiliation=true&publisher=true”
 ```
 
-#### What’s in the API response?
+##### What’s in the API response?
 
 The response includes a list of enriched DOI metadata records in JSON format. The fields returned in [a list response](https://support.datacite.org/docs/api-get-lists#whats-in-the-api-response) by default are also included.
 
-### Retrieve a single enriched DOI record
+#### Retrieve a single enriched DOI record
 
 When [retrieving a single DOI](https://support.datacite.org/docs/api-get-doi) with the REST API, set the parameter `enriched=true` to retrieve an enriched DOI record. For example:
 
@@ -74,25 +76,25 @@ When [retrieving a single DOI](https://support.datacite.org/docs/api-get-doi) wi
 curl "https://api.datacite.org/dois/10.60692/44wdx-8kd18?affiliation=true&publisher=true&enriched=true"
 ```
 
-#### What’s in the API response?
+##### What’s in the API response?
 
 The response includes the enriched DOI metadata record in JSON format. The fields returned in [a singleton response](https://support.datacite.org/docs/api-get-doi#whats-in-the-response) by default are also included.
 
-### Relationships to enrichment records
+#### Relationships to enrichment records
 
 The enrichment records associated with a DOI are listed in the `relationships` attribute of the DOI record when retrieving lists of DOI records and single enriched DOI records. If no enrichments are listed, then either no enrichment records are available for that DOI or the available enrichment records could not be used to generate an enriched DOI record, leaving the original record in its place.
 
 The list below provides a description of the additional relationships fields that appear when `enriched=true`:
 
-#### relationships.enrichments
+##### relationships.enrichments
 
 An array of enrichments as dictionaries.
 
-#### relationships.enrichments.data.id
+##### relationships.enrichments.data.id
 
 The identifier of the enrichment.
 
-#### relationships.enrichments.data.type
+##### relationships.enrichments.data.type
 
 Always "enrichments".
 
