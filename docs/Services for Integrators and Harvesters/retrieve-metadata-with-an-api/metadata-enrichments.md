@@ -33,7 +33,7 @@ Before being ingested by DataCite, each enrichment record is also checked agains
 
 When retrieving an enriched DOI record, the enrichment records associated with a given DOI are applied to the original DOI record, generating a separate, enriched DOI record. The original DOI record is not modified by this process in any way. 
 
-Enrichment records are not applied if targeted metadata fields are changed by the original depositor. The original DOI record is displayed in place of the enriched record if the enriched record is in any way invalid according to the DataCite Metadata Schema
+Enrichment records are not applied if targeted metadata fields are changed by the original depositor. The original DOI record is displayed in place of the enriched record if the enriched record is in any way invalid according to the DataCite Metadata Schema.
 
 ### How are enriched DOI records generated?
 
