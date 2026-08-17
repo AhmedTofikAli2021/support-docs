@@ -130,10 +130,7 @@ Each field of an enrichment record is described below:
 | action        | The action that the enrichment performs. The available actions are:  update (change the entire top-level "field" from the "originalValue" to the "enrichedValue")  updateChild (change a child object within the top-level "field" from the "originalValue" to the "enrichedValue")  insert (insert the object in "enrichedValue" into the top-level "field")  deleteChild (remove the object in "originalValue" within the top-level field specified in "field") |
 | originalValue | When the action is update, updateChild, or deleteChild: the original value of the field or the child value to be replaced with the enrichedValue. Otherwise, this field is empty.                                                                                                                                                                                                                                                                                 |
 | enrichedValue | When the action is update, updateChild, or insert: the enriched value of the field or child value. Otherwise, this field is empty.                                                                                                                                                                                                                                                                                                                                |
-
-### Retrieve enrichment records
-
-#### Retrieve a list of enrichments
+### Retrieve a list of enrichment records
 
 Retrieve a list of enrichments via a GET request to <https://api.datacite.org/enrichments> with optional parameters:
 
@@ -141,7 +138,7 @@ Retrieve a list of enrichments via a GET request to <https://api.datacite.org/en
 curl https://api.datacite.org/enrichments
 ```
 
-##### Parameters
+#### Parameters
 
 The enrichments endpoint supports filter parameters that refine the list of results. These include the following filters:
 
@@ -150,11 +147,11 @@ The enrichments endpoint supports filter parameters that refine the list of resu
 | `doi`       | 10.48550/arxiv.2408.15127 | Retrieve enrichments for a specific DOI                                |
 | `client-id` | arxiv.content             | Retrieve enrichments for a specific repository’s DOIs by Repository ID |
 
-##### What's in the API response?
+#### What's in the API response?
 
 The REST API response includes enrichment records in JSON format. If another page is available for the request, the URL of the new page will be available in `links.next` portion of the response.
 
-#### Retrieve a single enrichment
+### Retrieve a single enrichment record
 
 If you know the ID of an enrichment record, you can retrieve a single enrichment record via a GET request to <https://api.datacite.org/enrichments/{id}>. For example:
 
