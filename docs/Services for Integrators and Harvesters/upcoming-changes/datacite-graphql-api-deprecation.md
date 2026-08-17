@@ -18,7 +18,7 @@ The DataCite GraphQL API was first launched as a pre-release in May 2019, with a
 
 Over the past year, we have successfully transitioned DataCite Commons to rely exclusively on the DataCite REST API, while making the same metadata and relationships available in the interface and simultaneously improving performance. 
 
-From our usage data, we can see that the vast majority of users have also shifted to the REST API for the types of queries GraphQL was intended to support. As part of shifting our development and support efforts to focus on the DataCite REST API, the DataCite GraphQL API will be deprecated on 1 July 2027. This deprecation will only affect a small number of users.
+From our usage data, we can see that the vast majority of users have also shifted to the REST API for the types of queries GraphQL was intended to support. As part of shifting our development and support efforts to focus on the DataCite REST API, the DataCite GraphQL API will be deprecated in July 2027. This deprecation will only affect a small number of users.
 
 ## What do I need to do?
 
