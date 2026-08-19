@@ -14,7 +14,7 @@ Below is a list of software system integrations developed/supported by [DataCite
 
 Other DataCite integrations exist, but their developers have not yet registered as service providers, so we cannot assure that they meet best practices. If you don't see a system that you use listed here, please encourage your vendor to become a registered service provider. 
 
-Interested in becoming a registered Service Provider? [Learn more about the Service Providers program](https://datacite.org/service-providers.html)
+Interested in becoming a Registered Service Provider? [Learn more about the Service Providers program](https://datacite.org/service-providers.html)
 
 > 📘 To register DOIs you need a DataCite account!
 > 
@@ -137,7 +137,7 @@ InvenioRDM is a turn-key research data management platform with an intuitive use
 
 **Documentation:** DOI registration: <https://inveniordm.docs.cern.ch/customize/dois/>
 
-**Registered service provider:** [InvenioRDM](https://inveniordm.docs.cern.ch/)
+**Registered service provider:** [InvenioRDM](https://inveniordm.docs.cern.ch/); [Cottage Labs](https://cottagelabs.com/)
 
 ### Medad
 
@@ -195,6 +195,18 @@ RSpace is a digital research platform comprised of four components: an electroni
 **Documentation:** <https://researchspace.helpdocs.io/article/0wh5ziurr5#add-igsn-identifiers-to-your-samples>
 
 **Registered service provider:** [Research Space](https://www.researchspace.com/)
+
+### Samvera Hyrax
+
+<https://hyrax.samvera.org>
+
+Hyrax is an open-source, Samvera-powered front-end repository solution that allows the deposit of content via configurable workflows, description using customisable metadata, and user-level control over that content, including uploading, modifying and deleting it. Samvera community members have used Hyrax for digital collections, institutional repositories, data repositories and other purposes.
+
+Cottage Labs specialises in implementing DataCite’s hierarchical Metadata Schema within Hyrax, which typically supports Dublin Core out of the box, and integrating the minting and registration of DOIs into customisable Hyrax workflows.
+
+**Documentation:** [Hyrax Documentation](https://samvera.atlassian.net/wiki/spaces/hyraxdocs/overview)
+
+**Registered service provider:** [Cottage Labs](https://cottagelabs.com/)
 
 ### System for Earth & Extraterrestrial Samples Registration (SESAR)
 
