@@ -16,5 +16,4 @@ next:
 - [Versioning](doc:versioning)
 - [Connecting different versions, formats and more with Related Identifiers](doc:connecting-versions-with-related-identifiers)
 - [Local Contexts Notices and Labels](doc:local-contexts-notices-and-labels)
-- [Registering DataCite DOIs for Awards](doc:registering-datacite-dois-for-awards)
 - [Formatted Citations and DataCite Metadata](doc:formatted-citations-and-datacite-metadata)
