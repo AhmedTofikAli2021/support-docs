@@ -54,7 +54,8 @@ To modify your information, go to the _Settings_ tab of the dashboard. Click the
 - **System Email:** The primary email address that you would like DataCite to use to communicate with you, including sending password reset requests. If you have a generic shared email address (such as [info@datacite.org](mailto:info@datacite.org) or similar), you may use that here. 
 - **Group Email (optional)**: A generic shared email address (such as [info@datacite.org](mailto:info@datacite.org) or similar) where you would like to receive communications from DataCite.
 - **Website (optional)**: The URL of the Member's primary website. The contents of this field will appear on the DataCite Members page. 
-- **Country (optional)**: The country where the Member is physically located. The contents of this field will appear on the DataCite Members page. 
+- **Country**: The country where the Member is physically located. The contents of this field will appear on the DataCite Members page.
+- **Tax Status**: The Tax Status of the Member organization. Select "Non-Profit" or "For-Profit".
 - **Organization Type (optional)**: Select the type of organization that best describes the Member. The contents of this field will appear on the DataCite Members page. 
 - **Focus Area (optional)**: Select the field of research that best describes the primary focus of the materials described by the Member's DOIs. The contents of this field will appear on the DataCite Members page. 
 - **Description (optional)**: A description of the Member.
@@ -117,7 +118,8 @@ Click the "Update Organization" button in the upper left. Enter any changes in t
 - **System Email:** The primary email address that you would like DataCite to use to communicate with you, including sending password reset requests. If you have a generic shared email address (such as [info@datacite.org](mailto:info@datacite.org) or similar), you may use that here.
 - **Group Email (optional)**: A generic shared email address (such as [info@datacite.org](mailto:info@datacite.org) or similar) where you would like to receive communications from DataCite.
 - **Website (optional)**: The URL of the Consortium Organization's primary website. 
-- **Country (optional)**: The country where the Consortium Organization is physically located. 
+- **Country**: The country where the Consortium Organization is physically located. 
+- **Tax Status**: The Tax Status of the Consortium Organization. Select "Non-Profit" or "For-Profit".
 - **Organization Type (optional)**: Select the type of organization that best describes the Consortium Organization.
 - **Focus Area (optional)**: Select the field of research that best describes the primary focus of the materials described by the Consortium Organization's DOIs.
 - **Description (optional)**: A description of the Consortium Organization.
@@ -198,7 +200,7 @@ The Type field refers to the platform where the content will be shared. The defa
 
 Full name of the Repository. This is typically the name of the organization, as the organization wants it displayed. For example, "Archaeology Data Service". 
 
-#### Repository Alternate Name (optional).
+#### Repository Alternate Name (optional)
 
 An Alternate Repository Name can be included if appropriate.
 
