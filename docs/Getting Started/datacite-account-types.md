@@ -16,7 +16,7 @@ next:
 ---
 When you join DataCite, your organization will be given access to [DataCite Fabrica](doc:doi-fabrica) and the [API](doc:api). To create, update and manage your organization's information and your DOIs you will need to know the ID and password of the account you want to use. 
 
-You can [reset the password](doc:reset-fabrica-password) at any time (you will need to know the ID of the account you want to reset the password for). A set password email will then be sent to the system email contact.
+You can [reset the password](doc:reset-fabrica-password) at any time (you will need to know the ID of the account you want to reset the password for). A set password email will then be sent to the system email contact. 
 
 - Reset password in the production environment: <https://doi.datacite.org/reset>.
 - Reset password in the test environment: <https://doi.test.datacite.org/reset>.
