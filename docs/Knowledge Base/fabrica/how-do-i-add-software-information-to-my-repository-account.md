@@ -29,7 +29,7 @@ On the "Update Repository" page, scroll down to "Software" and select the softwa
   "images": [
     {
       "image": [
-        "https://files.readme.io/4c5754cfc9de27653d9c7d64632c0432593a6be38cbb39406a616e98dc6f17ab-c0e358bebe295f499e949a736de9103837796479dcfee5ccf7d62fff0d204102-Screenshot_2026-03-23_at_11.03.57.png",
+        "https://files.readme.io/0e5896a4e437ecdd68499da386b681dc65e5d858065a46a45d9c7fc5c22e0094-Screenshot_2026-08-20_at_12.55.05.png",
         "",
         ""
       ],

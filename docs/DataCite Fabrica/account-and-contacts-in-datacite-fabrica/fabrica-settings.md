@@ -233,7 +233,7 @@ Select the software used by the repository from the dropdown list. Type the name
   "images": [
     {
       "image": [
-        "https://files.readme.io/c0e358bebe295f499e949a736de9103837796479dcfee5ccf7d62fff0d204102-Screenshot_2026-03-23_at_11.03.57.png",
+        "https://files.readme.io/0e5896a4e437ecdd68499da386b681dc65e5d858065a46a45d9c7fc5c22e0094-Screenshot_2026-08-20_at_12.55.05.png",
         null,
         ""
       ],
