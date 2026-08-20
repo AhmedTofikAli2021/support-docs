@@ -226,7 +226,7 @@ Select the language of the repository from the dropdown list.
 
 #### Software
 
-Select the software used by the Repository from the dropdown list. If your repository software is not listed, select 'Other'.
+Select the software used by the repository from the dropdown list. Type the name of your repository software if it is not listed.
 
 [block:image]
 {
@@ -358,7 +358,7 @@ This will only appear if the Repository Type "Disciplinary" has been selected. A
 
 > 👍 The Repository Discipline field
 > 
-> The Repository Discipline field is used to enrich DOI metadata. This does not modify DOI metadata but is used to enhance search queries, so if the Repository Discipline is Biology, DOIs registered by the repository will be captured by queries for the subject "Biology" in the Graph QL API and DataCite Commons. This feature is only for disciplinary repositories
+> The Repository Discipline field is used to enrich DOI metadata. This does not modify DOI metadata but is used to enhance search queries, so if the Repository Discipline is Biology, DOIs registered by the repository will be captured by queries for the subject "Biology" in the Graph QL API and DataCite Commons. This feature is only for disciplinary repositories.
 
 ![](https://files.readme.io/a3afe99-small-Screenshot_2023-05-03_at_12.55.49.png)
 
