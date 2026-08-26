@@ -1,6 +1,5 @@
 ---
 title: repositories
-excerpt: ''
 deprecated: false
 hidden: false
 metadata:

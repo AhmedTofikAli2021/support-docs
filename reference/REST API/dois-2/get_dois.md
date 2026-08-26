@@ -1,10 +1,7 @@
 ---
-title: Return a list of DOIs.
-excerpt: ''
 api:
   file: rest-api.json
   operationId: get_dois
-deprecated: false
 hidden: false
 metadata:
   title: ''

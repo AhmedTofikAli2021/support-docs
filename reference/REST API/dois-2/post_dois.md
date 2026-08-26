@@ -1,10 +1,7 @@
 ---
-title: Add a new DOI.
-excerpt: ''
 api:
   file: rest-api.json
   operationId: post_dois
-deprecated: false
 hidden: false
 metadata:
   title: ''

@@ -1,6 +1,6 @@
 ---
 title: dois
-excerpt: ''
+excerpt: DOIs
 deprecated: false
 hidden: false
 metadata:

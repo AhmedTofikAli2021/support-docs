@@ -1,6 +1,6 @@
 ---
 title: activities
-excerpt: ''
+excerpt: Activities
 deprecated: false
 hidden: false
 metadata:

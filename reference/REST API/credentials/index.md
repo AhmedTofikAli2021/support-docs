@@ -1,6 +1,5 @@
 ---
 title: credentials
-excerpt: ''
 deprecated: false
 hidden: false
 metadata:
