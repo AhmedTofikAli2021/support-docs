@@ -226,14 +226,14 @@ Select the language of the repository from the dropdown list.
 
 #### Software
 
-Select the software used by the Repository from the dropdown list. If your repository software is not listed, select 'Other'.
+Select the software used by the repository from the dropdown list. Type the name of your repository software if it is not listed.
 
 [block:image]
 {
   "images": [
     {
       "image": [
-        "https://files.readme.io/c0e358bebe295f499e949a736de9103837796479dcfee5ccf7d62fff0d204102-Screenshot_2026-03-23_at_11.03.57.png",
+        "https://files.readme.io/0e5896a4e437ecdd68499da386b681dc65e5d858065a46a45d9c7fc5c22e0094-Screenshot_2026-08-20_at_12.55.05.png",
         null,
         ""
       ],
@@ -358,7 +358,7 @@ This will only appear if the Repository Type "Disciplinary" has been selected. A
 
 > 👍 The Repository Discipline field
 > 
-> The Repository Discipline field is used to enrich DOI metadata. This does not modify DOI metadata but is used to enhance search queries, so if the Repository Discipline is Biology, DOIs registered by the repository will be captured by queries for the subject "Biology" in the Graph QL API and DataCite Commons. This feature is only for disciplinary repositories
+> The Repository Discipline field is used to enrich DOI metadata. This does not modify DOI metadata but is used to enhance search queries, so if the Repository Discipline is Biology, DOIs registered by the repository will be captured by queries for the subject "Biology" in the Graph QL API and DataCite Commons. This feature is only for disciplinary repositories.
 
 ![](https://files.readme.io/a3afe99-small-Screenshot_2023-05-03_at_12.55.49.png)
 

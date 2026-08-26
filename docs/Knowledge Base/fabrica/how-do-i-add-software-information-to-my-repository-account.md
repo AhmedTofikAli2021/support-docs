@@ -22,16 +22,14 @@ Direct Members, Consortium Leads, and Consortium Organizations will first need t
 
 ### Update Software information
 
-On the "Update Repository" page, scroll down to "Software" and select the software used by the repository. If none of the options apply, select "Other". 
-
-You can also get in touch with us at [support@datacite.org](mailto:support@datacite.org) to inquire about adding a software option to the list. We list all [integrations supported by DataCite Registered Service Providers](doc:service-provider-software-integrations), along with others that have broad community adoption.
+On the "Update Repository" page, scroll down to "Software" and select the software used by the repository. Type the name of your repository software if it is not listed. The suggested options are [integrations supported by DataCite Registered Service Providers](doc:service-provider-software-integrations).
 
 [block:image]
 {
   "images": [
     {
       "image": [
-        "https://files.readme.io/4c5754cfc9de27653d9c7d64632c0432593a6be38cbb39406a616e98dc6f17ab-c0e358bebe295f499e949a736de9103837796479dcfee5ccf7d62fff0d204102-Screenshot_2026-03-23_at_11.03.57.png",
+        "https://files.readme.io/0e5896a4e437ecdd68499da386b681dc65e5d858065a46a45d9c7fc5c22e0094-Screenshot_2026-08-20_at_12.55.05.png",
         "",
         ""
       ],
@@ -42,4 +40,4 @@ You can also get in touch with us at [support@datacite.org](mailto:support@datac
 [/block]
 
 
-Once an option is selected, click "Update Repository" at the bottom of the page to save your selection. All required fields, including Software, must be completed.
+Once an option is entered, click "Update Repository" at the bottom of the page to save your changes. All required fields, including Software, must be completed.
